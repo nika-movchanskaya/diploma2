@@ -464,6 +464,9 @@ h1, h2, h3 {
   .content__article_txt {
 		margin-top: 39px;
 	}
+  .content__article_img {
+		max-width: 100%;
+	}
 
 }
 
