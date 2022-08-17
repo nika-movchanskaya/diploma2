@@ -983,4 +983,7 @@ h1, h2, h3 {
 		padding: 30px 24px;
 		width: 100%;
 	}
+	.popup__content {
+		margin: 0 15px;
+	}
 }
