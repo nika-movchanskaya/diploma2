@@ -21,10 +21,6 @@ h1, h2, h3 {
 	padding: 0;
 }
 
-/**/
-/*popup mobile отступы слева справа затестить черех git pages*/
-/*Владимира спросить про nth odd even, числительные как?, бургер*/
-
 /*--Header--*/
 .header {
 	color:  #ffffff;
@@ -285,7 +281,7 @@ h1, h2, h3 {
     width: calc(50vw - 4px);
     margin-top: 4px;
   }
-  .trends__article:nth-child(odd) {
+  .trends__article_odd {
     border: 0;
   }
   .trends__article1, .trends__article2{
@@ -395,7 +391,7 @@ h1, h2, h3 {
 		width: calc(50% - 21px);
 		margin-top: 30px;
   }
-  .goods__article:nth-child(even) {
+  .goods__article_even {
   	margin-left: 21px;
   }
   .goods__article1, .goods__article2 {
