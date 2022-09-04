@@ -300,7 +300,7 @@ h1, h2, h3 {
   	font-size: 16px;
   }
 }
-@media (max-width: 640px) and (orientation: portrait) {
+@media (max-width: 640px) /*and (orientation: portrait)*/ {
   .trends__article {
     width: 100%;
     border: 0;
