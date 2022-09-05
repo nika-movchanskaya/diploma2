@@ -187,14 +187,14 @@ h1, h2, h3 {
 	width: 100vw;
 	display: flex;
 }
-.content__h2 {
+.content__title {
 	margin-top: 64px;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 20px;
 	font-weight: 700;
 }
-.content__h2::after {
+.content__title::after {
 	content: '';
 	display: block;
 	margin: 15px auto 28px auto;
@@ -204,17 +204,9 @@ h1, h2, h3 {
 }
 .trends__article {
 	width: calc(25vw - 3px);
-	display: flex;
-	align-items: flex-end;
-	flex-grow: 1;
 	border-left: 4px solid white;
-	box-sizing: border-box;
-	z-index: 0;
-	position: relative;
-	min-height: 320px;	
 	background-color: #000000;
-	background-size: cover;
-	background-position: center center;
+	position: relative;
 }
 .trends__article::after{
 	content: '';
@@ -226,25 +218,31 @@ h1, h2, h3 {
 	left: 0;
 	background: rgba(0, 0, 0, 0.6);
 }
+.trends__img{
+	max-width: 100%;
+	min-height: 320px;
+	display: block;
+	box-sizing: border-box;
+	object-fit: cover;
+	object-position: center center;
+	position: relative;
+	z-index: 0; 
+}
 .trends__article1{
 	border-left: 0;
-	background-image: url('../images/trend1.png');
-}
-.trends__article2{
-	background-image: url('../images/trend2.png');
-}
-.trends__article3{
-	background-image: url('../images/trend3.png');
-}
-.trends__article4{
-	background-image: url('../images/trend4.png');
 }
 .trends__article_content {
-	width: 100%;
-	padding: 39px 33px 39px 33px;
-	margin:  auto 21px 16px 21px;
-	border:  3px solid #b59f5b;
-	z-index: 2; 
+	padding: 39px 33px;
+	margin: auto 21px 16px 21px;
+	border: 3px solid #b59f5b;
+	z-index: 3; 
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 .trends__article_title_link {
 	display: block;
@@ -264,7 +262,7 @@ h1, h2, h3 {
 	color: #b59f5b;
 }
 @media (min-width: 641px) and (max-width: 1199px) {
-  .content__h2 {
+  .content__title {
 		margin-top: 50px;
 		font-size: 18px;
 	  }
@@ -289,7 +287,7 @@ h1, h2, h3 {
   }
 }
 @media (max-width: 640px) {
-  .content__h2 {
+  .content__title {
 		margin-top: 44px;
 		font-size: 16px;
 	 }
@@ -308,6 +306,12 @@ h1, h2, h3 {
   }
   .trends__article1 {
     margin-top: 0;
+  }
+  .trends__img{ 
+		width: 100%;
+  }
+  .trends__article_content {
+  	width: calc(100% - 42px);
   }
 }
 
@@ -847,7 +851,7 @@ h1, h2, h3 {
 	top: 0;
 	left: 0;
 	background-color: rgba(0,0,0,0.6);
-	z-index: 2;
+	z-index: 4;
 }
 .popup {
 	display: flex;
@@ -857,7 +861,7 @@ h1, h2, h3 {
 	box-sizing: border-box;
 	background-color: #ffffff;
 }
-.popup__h2 {
+.popup__title {
 	margin: 0;
 }
 .popup__label {
